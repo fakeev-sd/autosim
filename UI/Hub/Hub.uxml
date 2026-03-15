@@ -1,0 +1,87 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Hub/Hub.uss?fileID=7433441132597879392&amp;guid=53de4d5360fe55142be747aa83b0b5ec&amp;type=3#Hub" />
+
+    <ui:VisualElement name="root" class="root">
+        <ui:VisualElement class="center">
+            <ui:VisualElement class="card">
+                <ui:VisualElement class="titleRow">
+                    <ui:Image name="logo-image" class="logo" />
+                    <ui:Label text="KKOTIP-Tech" class="title" />
+                </ui:VisualElement>
+
+                <ui:Label text="Интерактивный образовательный симулятор для студентов ККОТиП." class="subtitle" />
+
+                <ui:VisualElement name="login-panel" class="panel">
+                    <ui:Label text="Авторизация" class="sectionTitle" />
+                    <ui:TextField name="login-login" label="Логин" class="field" />
+                    <ui:TextField name="login-password" label="Пароль" class="field" />
+                    <ui:Button name="login-btn" text="Войти" class="btnPrimary" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="app-panel" class="panel hidden">
+                    <ui:VisualElement class="rowBetween">
+                        <ui:Label name="profile-name" text="Профиль: -" class="profile" />
+                        <ui:Button name="logout-btn" text="Выйти" class="btnGhost" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="tab-bar" class="tabBar">
+                        <ui:Button name="tab-study-btn" text="Учебный режим" class="tabButton" />
+                        <ui:Button name="tab-results-btn" text="Результаты" class="tabButton hidden" />
+                        <ui:Button name="tab-admin-btn" text="Администрирование" class="tabButton hidden" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="study-view" class="viewCard">
+                        <ui:Label text="Выбор задания" class="sectionTitle" />
+                        <ui:ScrollView name="tasks-list" class="tasksList" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="results-view" class="viewCard hidden">
+                        <ui:Label text="Результаты" class="sectionTitle" />
+                        <ui:Label name="results-note" text="Показаны только ваши результаты." class="note" />
+
+                        <ui:VisualElement class="attemptsTable">
+                            <ui:VisualElement class="tableHeaderRow">
+                                <ui:Label text="Сценарий" class="tableHeaderCell colScenario" />
+                                <ui:Label text="Дата" class="tableHeaderCell colDate" />
+                                <ui:Label text="Время" class="tableHeaderCell colDuration" />
+                                <ui:Label text="Ошибки" class="tableHeaderCell colErrors" />
+                                <ui:Label text="Оценка" class="tableHeaderCell colGrade" />
+                            </ui:VisualElement>
+
+                            <ui:ScrollView name="results-attempts-scroll" class="tableBody" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="admin-view" class="viewCard hidden">
+                        <ui:Label text="Администрирование" class="sectionTitle" />
+                        <ui:Label text="Все результаты студентов." class="note" />
+
+                        <ui:VisualElement class="attemptsTable">
+                            <ui:VisualElement class="tableHeaderRow">
+                                <ui:Label text="Студент" class="tableHeaderCell colStudent" />
+                                <ui:Label text="Группа" class="tableHeaderCell colGroup" />
+                                <ui:Label text="Сценарий" class="tableHeaderCell colScenario" />
+                                <ui:Label text="Дата" class="tableHeaderCell colDate" />
+                                <ui:Label text="Время" class="tableHeaderCell colDuration" />
+                                <ui:Label text="Ошибки" class="tableHeaderCell colErrors" />
+                                <ui:Label text="Оценка" class="tableHeaderCell colGrade" />
+                            </ui:VisualElement>
+
+                            <ui:ScrollView name="admin-attempts-scroll" class="tableBody" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="error-overlay" class="overlay hidden">
+            <ui:VisualElement class="modal">
+                <ui:Label text="Ошибка" class="modalTitle" />
+                <ui:Label name="error-message" text="" class="modalText" />
+                <ui:VisualElement class="modalActions">
+                    <ui:Button name="error-ok-btn" text="ОК" class="btnPrimary" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

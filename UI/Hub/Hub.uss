@@ -1,0 +1,344 @@
+.root {
+    flex-grow: 1;
+    background-color: rgb(12, 12, 14);
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 1100px;
+    max-width: 96%;
+}
+
+.card {
+    background-color: rgb(20, 20, 24);
+    border-radius: 16px;
+    padding: 18px;
+    border-width: 1px;
+    border-color: rgb(42, 42, 50);
+}
+
+.titleRow {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background-color: rgb(28, 28, 34);
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgb(42, 42, 50);
+}
+
+.title {
+    font-size: 22px;
+    unity-font-style: bold;
+    color: rgb(240, 240, 245);
+}
+
+.subtitle {
+    font-size: 12px;
+    color: rgb(170, 170, 180);
+    margin-bottom: 14px;
+}
+
+.note {
+    font-size: 11px;
+    color: rgb(150, 150, 160);
+    margin-bottom: 10px;
+}
+
+.panel {
+    margin-top: 10px;
+}
+
+.sectionTitle {
+    font-size: 14px;
+    unity-font-style: bold;
+    color: rgb(220, 220, 230);
+    margin-bottom: 8px;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field .unity-base-field__label,
+.field:hover .unity-base-field__label,
+.field:focus-within .unity-base-field__label {
+    color: rgb(170, 170, 180);
+}
+
+.field .unity-text-field__input {
+    color: rgb(25, 25, 28);
+}
+
+.rowBetween {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile {
+    font-size: 12px;
+    color: rgb(190, 190, 200);
+}
+
+.btnPrimary {
+    height: 34px;
+    border-radius: 10px;
+    background-color: rgb(58, 98, 255);
+    color: rgb(255, 255, 255);
+}
+
+.btnGhost {
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-color: rgb(70, 70, 82);
+    color: rgb(220, 220, 230);
+}
+
+.tabBar {
+    flex-direction: row;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.tabButton {
+    height: 34px;
+    margin-right: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 38);
+    border-width: 1px;
+    border-color: rgb(50, 50, 58);
+    color: rgb(210, 210, 220);
+}
+
+.tabButtonActive {
+    background-color: rgb(58, 98, 255);
+    border-color: rgb(58, 98, 255);
+    color: rgb(255, 255, 255);
+}
+
+.viewCard {
+    background-color: rgb(24, 24, 29);
+    border-radius: 14px;
+    padding: 14px;
+    border-width: 1px;
+    border-color: rgb(42, 42, 50);
+}
+
+/* STUDY MODE */
+
+.tasksList {
+    height: 320px;
+    margin-top: 8px;
+}
+
+.taskCard {
+    background-color: rgb(28, 28, 34);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-color: rgb(42, 42, 50);
+}
+
+.taskTopRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskInfo {
+    flex-grow: 1;
+    margin-right: 14px;
+}
+
+.taskTitle {
+    font-size: 13px;
+    unity-font-style: bold;
+    color: rgb(235, 235, 242);
+    white-space: normal;
+}
+
+.taskDesc {
+    font-size: 11px;
+    color: rgb(170, 170, 180);
+    margin-top: 4px;
+    white-space: normal;
+}
+
+.taskLaunchBtn {
+    width: 150px;
+    min-width: 150px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: rgb(58, 98, 255);
+    color: rgb(255, 255, 255);
+}
+
+/* TABLES */
+
+.attemptsTable {
+    margin-top: 8px;
+    border-width: 1px;
+    border-color: rgb(42, 42, 50);
+    border-radius: 12px;
+    background-color: rgb(22, 22, 27);
+    overflow: hidden;
+}
+
+.tableHeaderRow {
+    flex-direction: row;
+    min-height: 42px;
+    align-items: center;
+    background-color: rgb(30, 30, 36);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(42, 42, 50);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.tableBody {
+    height: 360px;
+}
+
+.tableDataRow {
+    flex-direction: row;
+    align-items: center;
+    min-height: 52px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(42, 42, 50);
+    background-color: rgb(24, 24, 29);
+}
+
+.tableDataRow:hover {
+    background-color: rgb(30, 30, 36);
+}
+
+.tableCell {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    color: rgb(220, 220, 230);
+    unity-text-align: middle-left;
+}
+
+.tableHeaderCell {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 11px;
+    unity-font-style: bold;
+    color: rgb(170, 170, 180);
+    unity-text-align: middle-left;
+}
+
+.colStudent {
+    width: 170px;
+}
+
+.colGroup {
+    width: 120px;
+}
+
+.colScenario {
+    flex-grow: 1;
+    min-width: 220px;
+}
+
+.colDate {
+    width: 150px;
+}
+
+.colDuration {
+    width: 105px;
+    unity-text-align: middle-center;
+}
+
+.colErrors {
+    width: 90px;
+    unity-text-align: middle-center;
+}
+
+.colGrade {
+    width: 110px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradePill {
+    min-width: 74px;
+    height: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 13px;
+    background-color: rgb(58, 98, 255);
+    color: rgb(255, 255, 255);
+    unity-font-style: bold;
+    unity-text-align: middle-center;
+    font-size: 11px;
+}
+
+.emptyState {
+    padding: 14px;
+    font-size: 12px;
+    color: rgb(150, 150, 160);
+}
+
+/* ERROR MODAL */
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.58);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 380px;
+    max-width: 90%;
+    background-color: rgb(24, 24, 28);
+    border-radius: 14px;
+    padding: 18px;
+    border-width: 1px;
+    border-color: rgb(52, 52, 60);
+}
+
+.modalTitle {
+    font-size: 16px;
+    unity-font-style: bold;
+    color: rgb(240, 240, 245);
+    margin-bottom: 8px;
+}
+
+.modalText {
+    font-size: 12px;
+    color: rgb(195, 195, 205);
+    margin-bottom: 14px;
+    white-space: normal;
+}
+
+.modalActions {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hidden {
+    display: none;
+}

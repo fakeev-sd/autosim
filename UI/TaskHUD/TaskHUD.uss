@@ -1,0 +1,305 @@
+.hudRoot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.panel {
+    background-color: rgba(8, 10, 14, 0.86);
+    border-radius: 14px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.18);
+    padding: 12px;
+}
+
+.panelTitle {
+    font-size: 18px;
+    unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.96);
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+}
+
+/* Tasks */
+.tasksPanel {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 500px;
+}
+
+.taskRow {
+    min-height: 54px;
+    justify-content: center;
+    border-radius: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 8px;
+    border-width: 1px;
+}
+
+.taskText {
+    font-size: 15px;
+    white-space: normal;
+}
+
+.taskRow.completed {
+    background-color: rgba(50, 150, 80, 0.16);
+    border-color: rgba(90, 220, 120, 0.24);
+    opacity: 0.72;
+}
+
+.taskRow.completed .taskText {
+    color: rgba(160, 255, 185, 0.98);
+}
+
+.taskRow.current {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.taskRow.current .taskText {
+    color: rgba(255, 255, 255, 1);
+    unity-font-style: bold;
+}
+
+.taskRow.next {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.10);
+    opacity: 0.78;
+}
+
+.taskRow.next .taskText {
+    color: rgba(220, 220, 230, 0.9);
+}
+
+/* Info top-right */
+.infoPanel {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 190px;
+}
+
+.infoBlock {
+    align-items: flex-end;
+}
+
+.infoCaption {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.68);
+    margin-bottom: 2px;
+}
+
+.infoValue {
+    font-size: 28px;
+    unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.98);
+}
+
+.errorValue {
+    color: rgba(255, 190, 190, 0.98);
+}
+
+.infoDivider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Held item */
+.heldItemPanel {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    width: 270px;
+    min-height: 92px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+}
+
+.heldItemPanel.empty {
+    opacity: 0.62;
+}
+
+.heldItemImage {
+    width: 58px;
+    height: 58px;
+    margin-right: 12px;
+}
+
+.heldItemTextBlock {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.heldItemCaption {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.68);
+    margin-bottom: 2px;
+}
+
+.heldItemName {
+    font-size: 18px;
+    unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.96);
+    white-space: normal;
+}
+
+/* Hint */
+.hintPanel {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    min-width: 180px;
+    max-width: 420px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.hintText {
+    font-size: 16px;
+    unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.96);
+    unity-text-align: middle-center;
+    white-space: normal;
+}
+
+/* Instrument readout */
+.readoutPanel {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 250px;
+    min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.92);
+    border-radius: 14px;
+    border-width: 1px;
+    border-color: rgba(255, 60, 60, 0.25);
+    padding: 14px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.readoutTitle {
+    font-size: 14px;
+    color: rgba(255, 80, 80, 0.82);
+    unity-font-style: bold;
+    margin-bottom: 8px;
+    unity-text-align: middle-right;
+    align-self: stretch;
+}
+
+.readoutValue {
+    font-size: 42px;
+    unity-font-style: bold;
+    color: rgb(255, 40, 40);
+    letter-spacing: 2px;
+    unity-text-align: middle-right;
+    align-self: stretch;
+}
+
+/* Crosshair */
+.crosshair {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    margin-top: -3px;
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 99px;
+}
+
+.crosshair.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Fade */
+.fadeOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    display: none;
+}
+
+/* Result */
+.resultOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+    justify-content: center;
+    align-items: center;
+}
+
+.resultModal {
+    width: 390px;
+    max-width: 90%;
+    background-color: rgb(18, 18, 22);
+    border-radius: 16px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.14);
+    padding: 20px;
+}
+
+.resultTitle {
+    font-size: 22px;
+    unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.98);
+    margin-bottom: 14px;
+}
+
+.resultRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resultKey {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.resultVal {
+    font-size: 18px;
+    unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.98);
+}
+
+.resultGrade {
+    color: rgb(115, 190, 255);
+}
+
+.resultSaved {
+    font-size: 14px;
+    color: rgba(120, 255, 150, 0.94);
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.resultButton {
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgb(58, 98, 255);
+    color: rgb(255, 255, 255);
+}

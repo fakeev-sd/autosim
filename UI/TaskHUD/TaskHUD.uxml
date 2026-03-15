@@ -1,0 +1,91 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/TaskHUD/TaskHUD.uss?fileID=7433441132597879392&amp;guid=a168d7a88b4c7e64b8f58d0fdf8b55b4&amp;type=3#TaskHUD" />
+
+    <ui:VisualElement name="hud-root" class="hudRoot">
+
+        <!-- Tasks -->
+        <ui:VisualElement name="tasks-panel" class="panel tasksPanel">
+            <ui:Label text="Задачи" class="panelTitle" />
+
+            <ui:VisualElement name="task-prev-row" class="taskRow completed hidden">
+                <ui:Label name="task-prev-text" class="taskText" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="task-current-row" class="taskRow current">
+                <ui:Label name="task-current-text" class="taskText" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="task-next-row" class="taskRow next">
+                <ui:Label name="task-next-text" class="taskText" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Info -->
+        <ui:VisualElement name="info-panel" class="panel infoPanel">
+            <ui:VisualElement class="infoBlock">
+                <ui:Label text="Время" class="infoCaption" />
+                <ui:Label name="timer-value" text="00:00" class="infoValue" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="infoDivider" />
+
+            <ui:VisualElement class="infoBlock">
+                <ui:Label text="Ошибки" class="infoCaption" />
+                <ui:Label name="errors-value" text="0" class="infoValue errorValue" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Held item -->
+        <ui:VisualElement name="held-item-panel" class="panel heldItemPanel empty">
+            <ui:Image name="held-item-image" class="heldItemImage" />
+            <ui:VisualElement class="heldItemTextBlock">
+                <ui:Label text="В руках:" class="heldItemCaption" />
+                <ui:Label name="held-item-name" text="—" class="heldItemName" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Hover hint -->
+        <ui:VisualElement name="hint-panel" class="panel hintPanel hidden">
+            <ui:Label name="hint-label" text="" class="hintText" />
+        </ui:VisualElement>
+
+        <!-- Instrument readout -->
+        <ui:VisualElement name="readout-panel" class="readoutPanel hidden">
+            <ui:Label name="readout-title" text="ПРИБОР" class="readoutTitle" />
+            <ui:Label name="readout-value" text="10.1 В" class="readoutValue" />
+        </ui:VisualElement>
+
+        <!-- Crosshair -->
+        <ui:VisualElement name="crosshair" class="crosshair" />
+
+        <!-- Fade -->
+        <ui:VisualElement name="fade-overlay" class="fadeOverlay" />
+
+        <!-- Result -->
+        <ui:VisualElement name="result-overlay" class="resultOverlay hidden">
+            <ui:VisualElement class="resultModal">
+                <ui:Label text="Результат" class="resultTitle" />
+
+                <ui:VisualElement class="resultRow">
+                    <ui:Label text="Время:" class="resultKey" />
+                    <ui:Label name="result-time" text="00:00" class="resultVal" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="resultRow">
+                    <ui:Label text="Ошибки:" class="resultKey" />
+                    <ui:Label name="result-errors" text="0" class="resultVal" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="resultRow">
+                    <ui:Label text="Оценка:" class="resultKey" />
+                    <ui:Label name="result-grade" text="5" class="resultVal resultGrade" />
+                </ui:VisualElement>
+
+                <ui:Label text="Результат сохранён" class="resultSaved" />
+
+                <ui:Button name="result-back-btn" text="Вернуться в меню" class="resultButton" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
